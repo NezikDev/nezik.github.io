@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Glory:ital,wght@0,100..800;1,100..800&family=Patrick+Hand&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-bubbles: "Fuzzy Bubbles", sans-serif;
+  --font-comic: "Comic Neue", sans-serif;
+  --font-glory: "Glory", sans-serif;
+  --font-patrick: "Patrick Hand", sans-serif;
+  --color-maoblue: oklch(0.2062 0.0642 278.67);
+  --color-maopurple: oklch(0.3546 0.0708 348.78);
+  --color-maopurple-light: oklch(0.6424 0.0928 348.78);
+  --color-maopurple-lighter: oklch(0.7819 0.0928 348.78);
+  --color-maoorange: oklch(0.7136 0.0763 13.04);
+  --color-maoorange-light: oklch(0.8323 0.0554 13.04);
+  --color-maoorange-dark: oklch(0.6276 0.084 13.04);
+  --color-grayblue: oklch(0.6853 0.0493 261.325);
+  --color-whiteblue: oklch(0.947 0.0247 261.325);
+  --color-whitepink: oklch(0.9735 0.0123 10.15);
+}
