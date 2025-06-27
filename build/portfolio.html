@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nezzy's</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="script.js"></script>
   </head>
   <body
     class="min-h-screen flex flex-col bg-linear-to-b from-maoblue from-95% to-100% to-blue-950 bg-fixed"
@@ -12,15 +13,28 @@
     <div class="font-patrick text-lg min-h-dvh grid grid-rows-[auto_1fr_auto]">
       <nav class="font-bubbles sticky top-0 z-40 pb-6">
         <div
-          class="text-xl text-whitepink flex justify-center relative z-20 [&>a]:hover:scale-110 [&>a]:transition-transform [&>a]:duration-200 font-bold *:px-1 [&>a]:sm:px-3 *:py-3"
+          class="text-xl text-whitepink relative z-20 font-bold *:py-3 flex w-full"
         >
-          <a href="aboutme.html">About Me</a>
-          <p class="text-maopurple-light cursor-default">|</p>
-          <a href="socials.html">Socials</a>
-          <p class="text-maopurple-light cursor-default">|</p>
-          <a href="portfolio.html">My Art</a>
-          <p class="text-maopurple-light cursor-default">|</p>
-          <a href="commissions.html">Commissions</a>
+          <div
+            class="justify-center [&>a]:hover:scale-110 [&>a]:transition-transform [&>a]:duration-200 *:px-1 [&>a]:lg:px-3 *:hidden md:*:flex md:flex w-full"
+          >
+            <a href="aboutme.html">About Me</a>
+            <p class="text-maopurple-light cursor-default">|</p>
+            <a href="socials.html">Socials</a>
+            <p class="text-maopurple-light cursor-default">|</p>
+            <a href="portfolio.html">My Art</a>
+            <p class="text-maopurple-light cursor-default">|</p>
+            <a href="commissions.html">Commissions</a>
+          </div>
+          <div class="flex md:hidden px-4 ml-auto">
+            <button class="cursor-pointer" id="hamburger" onclick="toggleNav()">
+              <div class="space-y-2 *:bg-whitepink">
+                <div class="w-8 h-0.5"></div>
+                <div class="w-8 h-0.5"></div>
+                <div class="w-8 h-0.5"></div>
+              </div>
+            </button>
+          </div>
         </div>
 
         <div class="absolute top-0 w-full overflow-hidden z-10">
@@ -32,6 +46,33 @@
             <path d="M0,30 C480,90 960,0 1440,60 L1440,00 L0,0 Z"></path>
           </svg>
         </div>
+      </nav>
+      <nav
+        id="nav"
+        class="w-full bg-maopurple text-whitepink hidden top-10 fixed z-40 font-bubbles text-2xl font-bold text-center"
+      >
+        <ul class="w-full py-4 *:w-full">
+          <li>
+            <a href="aboutme.html" class="w-full"
+              ><p class="py-2">About Me</p></a
+            >
+          </li>
+          <li>
+            <a href="socials.html" class="w-full"
+              ><p class="py-2">Socials</p></a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" class="w-full py-2"
+              ><p class="py-2">My Art</p></a
+            >
+          </li>
+          <li>
+            <a href="commissions.html" class="w-full"
+              ><p class="py-2">Commissions</p></a
+            >
+          </li>
+        </ul>
       </nav>
 
       <main class="grow font-semibold py-6">
